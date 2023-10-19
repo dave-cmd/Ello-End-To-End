@@ -20,7 +20,7 @@ End to end deployment of an Apollo server built in node js to Kubernetes (EKS) u
     2. EKS: Used for Kubernetes to deploy application
     3. Terraform: To provision AWS resources
 
-## Execution part I
+## Execution Part I
 
     0. Create an EC2 key pair virginia us-east-1.
     1. Navigate to Terraform-EC2
