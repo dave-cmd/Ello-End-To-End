@@ -2,10 +2,6 @@
 
 The terraform scripts in the /Terraform/EC2 directory create an amazaon linux EC2 instance which runs a Jenkins server
 
-## Directory contents
-
-![My Image]("C:/Users/User/Downloads/EC2.jpeg")
-
 ## Tools
 
     1. Jenkins: To build and deploy the application to EKS. It is the CI-CD pipeline
