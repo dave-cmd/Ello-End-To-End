@@ -39,7 +39,7 @@ End to end deployment of an Apollo server built in node js to Kubernetes (EKS) u
 
     6. On successful deployment, copy the public IP of the jenkins server displayed in the terminal
 
-More instruction in the Terraform-EC2 directory README.md Execution Part II
+#### More instructions in the Terraform-EC2 directory README.md Execution Part II
 
 ## Project structure
 
