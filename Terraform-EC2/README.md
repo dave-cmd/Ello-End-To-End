@@ -50,7 +50,7 @@ Navigate to /Teraform-EC2 directory
 
 ## Documentation
 
-    Running terraform apply creates an Amazon linux EC2 instance. In this instance, runs a shell script which installs Jenkins, kubectl, git and terraform. This succcessful run of the manifest will output the public IP address of the instance. SSH login will be required to access the jenkins server on PORT 8080 of the public IP address.
+Running terraform apply creates an Amazon linux EC2 instance. In this instance, runs a shell script which installs Jenkins, kubectl, git and terraform. This succcessful run of the manifest will output the public IP address of the instance. SSH login will be required to access the jenkins server on PORT 8080 of the public IP address.
 
 ```
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
