@@ -24,10 +24,21 @@ End to end deployment of an Apollo server built in node js to Kubernetes (EKS) u
 
     0. Create an EC2 key pair virginia us-east-1.
     1. Navigate to Terraform-EC2
-    2. Add AWS credentials to the file ```terraform.tfvars``` and ```key_name``` which is the above named EC2 key pair
-    3. run ```$ terraform init``` to initialize terraform locally
-    4. run ```$ terraform validate``` to check for errors in the code
-    5. Run ```$ terraform apply --auto-apply``` to deploy the code
+    2. Add [AWS credentials] and  [key_name] to the file [terraform.tfvars]
+    3. Run
+        ```bash $ terraform init
+        ```
+      to initialize terraform locally.
+    4. Run
+        ```bash
+          $ terraform validate
+        ```
+      to check for errors in the code
+    5. Run
+        ```bash
+          $ terraform apply --auto-apply
+        ```
+      to deploy the code
     6. On successful deployment, copy the public IP of the jenkins server displayed in the terminal
 
 More instruction in the Terraform-EC2 directory README.md
