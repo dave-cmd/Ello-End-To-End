@@ -30,7 +30,7 @@ End to end deployment of an Apollo server built in node js to Kubernetes (EKS) u
         ```
       to initialize terraform locally.
     4. Run
-        ```bash
+        ```sh
           $ terraform validate
         ```
       to check for errors in the code
