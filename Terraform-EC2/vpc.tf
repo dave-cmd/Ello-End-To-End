@@ -33,6 +33,7 @@ resource "aws_default_route_table" "main-rtb" {
 }
 
 // Security goup allows traffic on PORTS 8080 & 22
+
 resource "aws_default_security_group" "default-sg" {
   vpc_id = aws_vpc.myapp-vpc.id
   ingress {
