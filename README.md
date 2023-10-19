@@ -20,28 +20,26 @@ End to end deployment of an Apollo server built in node js to Kubernetes (EKS) u
     2. EKS: Used for Kubernetes to deploy application
     3. Terraform: To provision AWS resources
 
-## Steps
+## Execution part I
 
     0. Create an EC2 key pair virginia us-east-1.
     1. Navigate to Terraform-EC2
     2. Add [AWS credentials] and  [key_name] to the file [terraform.tfvars]
-    3. Run
-        ```bash $ terraform init
-        ```
-      to initialize terraform locally.
-    4. Run
-        ```sh
-          $ terraform validate
-        ```
-      to check for errors in the code
-    5. Run
-        ```bash
+    3. Run to initialize terraform locally.
+
+        $ terraform init
+
+    4. Run  to check for errors in the code
+
+        $ terraform validate
+
+    5. Run to deploy the code
+
           $ terraform apply --auto-apply
-        ```
-      to deploy the code
+
     6. On successful deployment, copy the public IP of the jenkins server displayed in the terminal
 
-More instruction in the Terraform-EC2 directory README.md
+More instruction in the Terraform-EC2 directory README.md Execution Part II
 
 ## Project structure
 

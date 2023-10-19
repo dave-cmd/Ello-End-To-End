@@ -8,10 +8,6 @@ The terraform scripts in the /Terraform/EC2 directory create an amazaon linux EC
     2. EKS: Used for Kubernetes to deploy application
     3. Terraform: To provision AWS resources
 
-```bash
-  npm run deploy
-```
-
 ## Execution
 
 ### Precondition
@@ -30,21 +26,7 @@ The terraform scripts in the /Terraform/EC2 directory create an amazaon linux EC
         key_name          = ""
 ```
 
-Navigate to /Teraform-EC2 directory
-
-    1. Initialize terraform
-
-        $ terraform init
-
-    2. Validate the terraform files to check for error in the manifests
-
-        $ terraform validate
-
-    3. Deploy the infastructure
-
-        $ terraform apply --auto-approve
-
-## Documentation
+## Execution Part II
 
 Running terraform apply creates an Amazon linux EC2 instance. In this instance, runs a shell script which installs Jenkins, kubectl, git and terraform. This succcessful run of the manifest will output the public IP address of the instance. SSH login will be required to access the jenkins server on PORT 8080 of the public IP address.
 
