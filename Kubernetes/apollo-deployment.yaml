@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: apollo
+spec:
+  selector:
+    matchLabels:
+      app: apollo
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: apollo
+    spec:
+      containers:
+      - name: apollo
+        image: devphase254/ello_apollo_api:dev
+        ports:
+        - containerPort: 3000
