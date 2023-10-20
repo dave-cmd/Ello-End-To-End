@@ -11,6 +11,9 @@ ADD . /app
 RUN npm install
 RUN npm install pm2 -g
 
+# Create a production build
+RUN npm ci --omit=dev
+
 # Starting the pm2 process and keeping the docker container alive
 CMD pm2 start process.yml && tail -f /dev/null
 
